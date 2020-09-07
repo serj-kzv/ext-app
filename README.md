@@ -5,27 +5,24 @@ that is built with typescript mostly by using Angular anyway.
 
 # Instantiation
 ```sh
-# run inside ./ext-app directory
 npm i
 ```
 
 # Build
 After the command below you can find an compiled extension in `./ext-app/dist` directory.
 ```sh
-# run inside  ./ext-app directory
 npm run build-all
 ```
 
 # Build separately
 
 ```sh
-# run inside ./ext-app directory
-npm run buildBa # background action
-npm run buildBg # background script
-npm run buildCo # content script
-npm run buildOp # option page
-npm run buildPa # page action
-npm run buildSb # sidebar action
+npm run buildBa
+npm run buildBg
+npm run buildCo
+npm run buildOp
+npm run buildPa
+npm run buildSb
 
-npm run copy-shared-assets # to update manifest.json file
+npm run copy-shared-assets
 ```
