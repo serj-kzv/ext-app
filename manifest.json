@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "ext-app",
+  "description": "ext-app",
+  "short_name": "ext-app",
+  "author": "serj-kzv",
+  "version": "1",
+  "homepage_url": "https://github.com/serj-kzv/angular-webext-boilerplate-app",
+  "browser_action": {
+    "default_icon": "ba-app/favicon.ico",
+    "browser_style": false,
+    "default_popup": "/ba-app/index.html",
+    "default_title": "ext-app"
+  },
+  "sidebar_action": {
+    "browser_style": false,
+    "default_icon": "assets/img/mozlz4-edit.png",
+    "default_title": "ext-app",
+    "default_panel": "/sb-app/index.html"
+  },
+  "options_ui": {
+    "page": "/op-app/index.html",
+    "browser_style": true,
+    "open_in_tab": false
+  },
+  "page_action": {
+    "browser_style": false,
+    "default_icon": "assets/img/mozlz4-edit.png",
+    "default_title": "angular-webextension-boilerplate",
+    "default_popup": "/pa-app/index.html",
+    "show_matches": [
+      "<all_urls>"
+    ]
+  },
+  "background": {
+    "page": "/bg-app/index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "/co-app/runtime.js",
+        "/co-app/main.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "match_about_blank": true,
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "downloads",
+    "tabs",
+    "<all_urls>",
+    "webRequest",
+    "notifications"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
