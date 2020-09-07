@@ -5,7 +5,7 @@ that is built with typescript mostly by using Angular anyway.
 
 # Instantiation
 ```sh
-# run inside  ./ext-app
+# run inside ./ext-app directory
 npm i
 ```
 
@@ -19,6 +19,7 @@ npm run build-all
 # Build separately
 
 ```sh
+# run inside ./ext-app directory
 npm run buildBa # background action
 npm run buildBg # background script
 npm run buildCo # content script
