@@ -10,8 +10,7 @@ npm i
 ```
 
 # Build
-After the command below you can find an compiled extension in `/dist` directory
-inside `./ext-app` directory
+After the command below you can find an compiled extension in `./ext-app/dist` directory.
 ```sh
 # run inside  ./ext-app
 npm run build-all
