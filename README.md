@@ -1,7 +1,7 @@
 # What is this?
 It's a Web Extension **Angular** Boilerplate for **Mozilla Firefox**.
 You can build all part an extension with **Angular** using the boilerplate except `content script`
-wich is built with typescript mostly by using Angular anyway.
+that is built with typescript mostly by using Angular anyway.
 
 # Instantiation
 ```sh
