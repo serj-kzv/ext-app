@@ -17,12 +17,12 @@ npm run build-all
 # Build separately
 
 ```sh
-npm run buildBa
-npm run buildBg
-npm run buildCo
-npm run buildOp
-npm run buildPa
-npm run buildSb
+npm run buildBa && npm run copy-shared-assets
+npm run buildBg && npm run copy-shared-assets
+npm run buildCo && npm run copy-shared-assets
+npm run buildOp && npm run copy-shared-assets
+npm run buildPa && npm run copy-shared-assets
+npm run buildSb && npm run copy-shared-assets
 
 npm run copy-shared-assets
 ```
