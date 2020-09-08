@@ -2,10 +2,11 @@
     {{title}}
 </h1>
 
+<p>tab-list works!</p>
 <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">home</a>
-<button routerLink="/tab-list">tab-list</button>
-<button routerLink="/lazy-tab-one">lazy-tab-one</button>
-<button routerLink="/lazy-tab-two">lazy-tab-two</button>
+<button routerLink="./tab-one">tab-one</button>
+<button routerLink="./tab-two">tab-two</button>
+<button routerLink="./tab-three">tab-three</button>
 <button routerLink="/fake-page">404</button>
 
 <router-outlet></router-outlet>
