@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-tab-list',
@@ -9,9 +10,12 @@ export class TabListComponent implements OnInit {
 
   title = 'app-tab-list';
 
-  constructor() { }
+  users: any;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.users = this.route.snapshot.data.users;
   }
 
 }
