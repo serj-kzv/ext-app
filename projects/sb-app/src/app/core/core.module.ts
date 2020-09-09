@@ -16,6 +16,7 @@ import {InitService} from "./service/init.service";
         FooterComponent,
     ],
     imports: [
+        // Modules
         SharedModule,
         BrowserModule,
         BrowserAnimationsModule,
@@ -23,6 +24,13 @@ import {InitService} from "./service/init.service";
         RouterModule,
     ],
     exports: [
+        // Modules
+        SharedModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        RouterModule,
+
         // Components
         HeaderComponent,
         FooterComponent,

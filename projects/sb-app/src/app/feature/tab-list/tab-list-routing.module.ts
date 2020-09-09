@@ -11,19 +11,21 @@ const routes: Routes = [
         component: TabListComponent,
         canActivate: [],
         children: [
+            {path: 'tab-one', component: TabOneComponent},
+            {path: 'tab-two', component: TabTwoComponent},
+            {path: 'tab-three', component: TabThreeComponent},
+            {
+                path: 'tab-four-lazy',
+                loadChildren: () => import('./tab-four-lazy/tab-four-lazy.module').then(m => m.TabFourLazyModule)
+            },
+            {
+                path: 'tab-five-lazy',
+                loadChildren: () => import('./tab-five-lazy/tab-five-lazy.module').then(m => m.TabFiveLazyModule)
+            },
             {
                 path: '',
-                canActivateChild: [],
-                children: [
-                    {path: 'tab-one', component: TabOneComponent},
-                    {path: 'tab-two', component: TabTwoComponent},
-                    {path: 'tab-three', component: TabThreeComponent},
-                    {
-                        path: '',
-                        redirectTo: 'tab-one',
-                        pathMatch: 'full'
-                    }
-                ]
+                redirectTo: 'tab-one',
+                pathMatch: 'full'
             }
         ]
     }
