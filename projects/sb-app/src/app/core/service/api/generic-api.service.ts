@@ -1,9 +1,13 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {Observable} from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
-export class GenericApiService<T> {
+export abstract class GenericApiService<T> {
 
-  constructor() { }
+    protected constructor() {
+    }
+
+    abstract getAll(): Observable<T[]>;
 }
