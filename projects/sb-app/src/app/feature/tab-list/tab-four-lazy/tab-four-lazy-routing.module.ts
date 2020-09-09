@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
-import {LazyTabTwoComponent} from "./lazy-tab-two.component";
+import {RouterModule, Routes} from '@angular/router';
+import {TabFourLazyComponent} from "./tab-four-lazy.component";
 
 const routes: Routes = [
   {
     path: '',
-    component: LazyTabTwoComponent,
+    component: TabFourLazyComponent,
     canActivate: [],
   }
 ];
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LazyTabTwoRoutingModule { }
+export class TabFourLazyRoutingModule { }
