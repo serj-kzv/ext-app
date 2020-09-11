@@ -15,7 +15,13 @@ export class UserApiService extends GenericApiService<UserModel> {
     }
 
     public getAll(): Observable<UserModel[]> {
-        const path = browser.runtime.getURL('/sb-app/assets/fake-data/fake-user.json');
+        let path;
+
+        if (typeof browser !== 'undefined') {
+            path = browser.runtime.getURL('/sb-app/assets/fake-data/fake-user.json');
+        } else {
+            path = '/assets/fake-data/fake-user.json';
+        }
 
         return this.http.get<UserModel[]>(path).pipe(delay(1500));
     }

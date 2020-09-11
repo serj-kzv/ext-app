@@ -1,24 +1,27 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {from} from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class InitService {
 
-  constructor() {
-    this.init();
-  }
+    constructor() {
+        this.init();
+    }
 
-  init() {
-    this.logOnInit();
-  }
+    init() {
+        this.logOnInit();
+    }
 
-  logOnInit() {
-    console.log('browser api', browser);
-    from(browser.tabs.query({})).subscribe(tabs => {
-      console.log('tab list', tabs);
-    });
-  }
+    logOnInit() {
+        if (browser) {
+            console.log('=>>>>>> The app is run in a Web Extension environment!');
+            console.log('browser api', browser);
+            from(browser.tabs.query({})).subscribe(tabs => {
+                console.log('tab list', tabs);
+            });
+        }
+    }
 
 }

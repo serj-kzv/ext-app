@@ -1,14 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { SpinnerDirective } from './spinner.directive';
+import {NgModule} from '@angular/core';
+import {SpinnerDirective} from './spinner.directive';
 import {SpinnerComponent} from "./spinner.component";
-
+import {SharedModule} from "../../shared.module";
 
 
 @NgModule({
   declarations: [SpinnerComponent, SpinnerDirective],
   imports: [
-    CommonModule
+    SharedModule
+  ],
+  exports: [
+      SpinnerComponent,
+      SpinnerDirective
   ]
 })
 export class SpinnerModule { }
