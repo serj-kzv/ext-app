@@ -1,10 +1,15 @@
-import { Directive } from '@angular/core';
+import {Directive, OnInit, TemplateRef, ViewContainerRef} from '@angular/core';
 
 @Directive({
   selector: '[appSpinner]'
 })
-export class SpinnerDirective {
+export class SpinnerDirective implements OnInit {
 
-  constructor() { }
+  constructor(private templateRef: TemplateRef<any>,
+              private viewContainerRef: ViewContainerRef) { }
+
+  ngOnInit() {
+
+  }
 
 }
