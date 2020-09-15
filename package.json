@@ -13,9 +13,9 @@
     "buildOp": "ng build op-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --verbose=true --base-href ./",
     "buildPa": "ng build pa-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --verbose=true --base-href ./",
     "buildSb": "ng build sb-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --verbose=true --base-href ./",
-    "copy-shared-assets": "node cp-shared-assets.js",
+    "copy-manifest": "node copy-manifest.js",
     "build-all-prjs": "npm run buildBa & npm run buildBg & npm run buildCo & npm run buildOp & npm run buildPa & npm run buildSb",
-    "build-all": "npm run copy-shared-assets && npm run build-all-prjs"
+    "build-all": "npm run copy-manifest && npm run build-all-prjs"
   },
   "private": true,
   "dependencies": {
