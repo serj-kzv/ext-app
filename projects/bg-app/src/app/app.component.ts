@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'bg-app';
 
   ngOnInit(): void {
-    console.log(`${this.title} js is run!`);
+    console.log(`${this.title} js is run! browser api is`, browser);
   }
 }

@@ -13,4 +13,4 @@
 
 const title = 'co-app';
 
-console.log(`${title} js is run!`);
+console.log(`${title} js is run! browser api is`, browser);
