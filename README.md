@@ -25,6 +25,15 @@ or update `manifest.json` file only with
 ```sh
 npm run copy-manifest
 ```
+To run and auto update compiled code use `W` letter after commands.
+```sh
+npm run buildBaW
+npm run buildBgW
+npm run buildCoW
+npm run buildOpW
+npm run buildPaW
+npm run buildSbW
+```
 
 # Abbreviations
 
