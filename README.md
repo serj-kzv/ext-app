@@ -12,7 +12,7 @@ npm run build-all
 
 # Build separately
 
-Build separately with
+Build **separately** with
 ```sh
 npm run buildBa && npm run copy-manifest
 npm run buildBg && npm run copy-manifest
@@ -25,7 +25,7 @@ or update `manifest.json` file only with
 ```sh
 npm run copy-manifest
 ```
-To run and auto update compiled code use `W` letter after commands.
+To run and **auto update** compiled code use `W` ending letter in commands.
 ```sh
 npm run buildBaW
 npm run buildBgW
@@ -33,6 +33,15 @@ npm run buildCoW
 npm run buildOpW
 npm run buildPaW
 npm run buildSbW
+```
+To build for a **production** use `P` ending letter in commands.
+```sh
+npm run buildBaP
+npm run buildBgP
+npm run buildCoP
+npm run buildOpP
+npm run buildPaP
+npm run buildSbP
 ```
 
 # Abbreviations

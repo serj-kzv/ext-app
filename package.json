@@ -19,6 +19,12 @@
     "buildOp@": "ng build op-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --watch",
     "buildPa@": "ng build pa-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --watch",
     "buildSb@": "ng build sb-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --watch",
+    "buildBaP": "ng build ba-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
+    "buildBgP": "ng build bg-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
+    "buildCoP": "ng build co-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
+    "buildOpP": "ng build op-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
+    "buildPaP": "ng build pa-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
+    "buildSbP": "ng build sb-app --source-map=false --output-hashing=none --vendor-chunk=false --progress --base-href ./ --prod",
     "copy-manifest": "node copy-manifest.js",
     "build-all-prjs": "npm run buildBa & npm run buildBg & npm run buildCo & npm run buildOp & npm run buildPa & npm run buildSb",
     "build-all": "npm run copy-manifest && npm run build-all-prjs"
