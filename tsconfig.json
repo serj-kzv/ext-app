@@ -16,10 +16,6 @@
       "dom"
     ],
     "paths": {
-      "assets-lib": [
-        "dist/assets-lib/assets-lib",
-        "dist/assets-lib"
-      ]
     }
   }
 }
