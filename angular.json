@@ -616,38 +616,6 @@
           }
         }
       }
-    },
-    "assets-lib": {
-      "projectType": "library",
-      "root": "projects/assets-lib",
-      "sourceRoot": "projects/assets-lib/src",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "tsConfig": "projects/assets-lib/tsconfig.lib.json",
-            "project": "projects/assets-lib/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/assets-lib/tsconfig.lib.prod.json"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/assets-lib/tsconfig.lib.json",
-              "projects/assets-lib/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }
   },
   "schematics": {
