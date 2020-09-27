@@ -347,9 +347,9 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/op-app",
-            "index": "",
+            "index": "projects/op-app/src/index.html",
             "main": "projects/op-app/src/main.ts",
-            "polyfills": "",
+            "polyfills": "projects/op-app/src/polyfills.ts",
             "tsConfig": "projects/op-app/tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -372,7 +372,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": false,
+              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
