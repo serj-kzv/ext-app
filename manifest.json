@@ -14,24 +14,25 @@
   },
   "sidebar_action": {
     "browser_style": false,
-    "default_icon": "assets/img/mozlz4-edit.png",
+    "default_icon": "sb-app/favicon.ico",
     "default_title": "ext-app",
     "default_panel": "/sb-app/index.html"
   },
   "options_ui": {
     "page": "/op-app/index.html",
-    "browser_style": true,
+    "browser_style": false,
     "open_in_tab": false
   },
   "page_action": {
     "browser_style": false,
-    "default_icon": "assets/img/mozlz4-edit.png",
+    "default_icon": "pa-app/favicon.ico",
     "default_title": "angular-webextension-boilerplate",
     "default_popup": "/pa-app/index.html",
     "show_matches": [
       "<all_urls>"
     ]
   },
+  "devtools_page": "dp-app/index.html",
   "background": {
     "page": "/bg-app/index.html"
   },
