@@ -69,20 +69,23 @@ npm run copy-manifest
 * **pa** means [page action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction)
 * **sb** means [sidebar page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Sidebars)
 * **dp** means [devtools page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) (It's not a **devtool panel** that should be created manually. It's a initial page.)
-* **dpanel** means [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools). You can create as many **devtool page panel**s as you wish.  
-    **How to add a new panel see below.**  
-    **Firstly** generate a new panel. Where `X` is any unique string. Do not forget to create the panel in **dp-app** project with [devtools.panels.create()](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/devtools.panels/create).
-    ```
-    ng g application dpanelX-app --style=scss --routing --minimal
-    ng config projects.dpanelX-app.schematics.@schematics/angular:component.inlineTemplate false
-    ng config projects.dpanelX-app.schematics.@schematics/angular:component.inlineStyle false
-    ```
-    **Secondly** add commands to `package.json` project file to the `"scripts": { ...` section.
-    ```
-    "build:dpanelX": "ng build dpanelX-app --base-href ./",
-    "watch:dpanelX": "ng build dpanelX-app --base-href ./ --watch",
-    "prod:dpanelX": "ng build dpanelX-app --source-map=false --outputHashing=none --base-href ./ --prod",
-    ```
+* **dpanel** means [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools). You can create as many **devtool page panel**s as you wish.
+
+# How to add a new devtool page panel
+You can create as many [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) as you wish. Do not forget to create the panel in **dp-app** project with [devtools.panels.create()](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/devtools.panels/create).
+
+**Firstly** generate a new panel. Where `X` is any unique string. And switch on a `template` and `style` files generation.
+```
+ng g application dpanelX-app --style=scss --routing --minimal
+ng config projects.dpanelX-app.schematics.@schematics/angular:component.inlineTemplate false
+ng config projects.dpanelX-app.schematics.@schematics/angular:component.inlineStyle false
+```
+**Secondly** add commands to `package.json` project file to the `"scripts": { ...` section.
+```
+"build:dpanelX": "ng build dpanelX-app --base-href ./",
+"watch:dpanelX": "ng build dpanelX-app --base-href ./ --watch",
+"prod:dpanelX": "ng build dpanelX-app --source-map=false --outputHashing=none --base-href ./ --prod",
+```
 
 # Third party dependencies
 * [npm-run-all](https://github.com/mysticatea/npm-run-all) - to run build in parallel mode
