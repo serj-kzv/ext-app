@@ -22,7 +22,7 @@ npm run prod
 
 # Build separately
 
-Build **separately** with
+To build **separately** for a **development** with code [source map](https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map) use commands
 ```sh
 npm run build:ba
 npm run build:bg
@@ -33,7 +33,7 @@ npm run build:sb
 npm run build:dp
 npm run build:dpanel
 ```
-To run and **auto update** compiled code use commands
+To build for a **development** and **auto update** compiled code use commands
 ```sh
 npm run watch:ba
 npm run watch:bg
