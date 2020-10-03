@@ -16,8 +16,8 @@ export class AppComponent {
   private async createPanel() {
     const panel = await browser.devtools.panels.create(
         "dpanel-app",
-        "dpanel-app/favicon.ico",
-        "dpanel-app/index.html"
+        "/dpanel-app/favicon.ico",
+        "/dpanel-app/index.html"
     );
 
     panel.onShown.addListener(() => console.log("dp-app panel is being shown", panel));
