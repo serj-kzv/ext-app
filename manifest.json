@@ -5,7 +5,7 @@
   "short_name": "ext-app",
   "author": "serj-kzv",
   "version": "1",
-  "homepage_url": "https://github.com/serj-kzv/angular-webext-boilerplate-app",
+  "homepage_url": "https://github.com/serj-kzv/ext-app",
   "browser_action": {
     "default_icon": "ba-app/favicon.ico",
     "browser_style": false,
@@ -26,7 +26,7 @@
   "page_action": {
     "browser_style": false,
     "default_icon": "pa-app/favicon.ico",
-    "default_title": "angular-webextension-boilerplate",
+    "default_title": "pa-app",
     "default_popup": "/pa-app/index.html",
     "show_matches": [
       "<all_urls>"
@@ -34,6 +34,7 @@
   },
   "devtools_page": "dp-app/index.html",
   "background": {
+    "persistent": true,
     "page": "/bg-app/index.html"
   },
   "content_scripts": [
