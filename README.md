@@ -75,6 +75,8 @@ npm run copy-manifest
 * **nt** means [new tab page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/chrome_url_overrides)
 * **dpanel** means [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools). You can create as many **devtool page panel**s as you wish.
 
+**Note.** Also it is possible to override **bookmarks page** and **history page** pages for **Google Chrome** but it is not supported by **Mozilla Firefox** yet. See [here](https://developer.chrome.com/extensions/override).
+
 # How to add a new devtool page panel
 You can create as many [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) as you wish. Do not forget to create the panel in **dp-app** project with [devtools.panels.create()](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/devtools.panels/create).
 
