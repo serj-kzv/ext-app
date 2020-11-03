@@ -31,6 +31,7 @@ npm run build:op
 npm run build:pa
 npm run build:sb
 npm run build:dp
+npm run build:nt
 npm run build:dpanel
 ```
 To build for a **development** and **auto update** compiled code use commands
@@ -42,6 +43,7 @@ npm run watch:op
 npm run watch:pa
 npm run watch:sb
 npm run watch:dp
+npm run watch:nt
 npm run watch:dpanel
 ```
 To build for a **production** use commands
@@ -53,6 +55,7 @@ npm run prod:op
 npm run prod:pa
 npm run prod:sb
 npm run prod:dp
+npm run prod:nt
 npm run prod:dpanel
 ```
 To update `manifest.json` file use commands
@@ -69,6 +72,7 @@ npm run copy-manifest
 * **pa** means [page action](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/pageAction)
 * **sb** means [sidebar page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface/Sidebars)
 * **dp** means [devtools page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools) (It's not a **devtool panel** that should be created manually. It's a initial page.)
+* **nt** means [new tab page](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/chrome_url_overrides)
 * **dpanel** means [devtools page panel](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Extending_the_developer_tools). You can create as many **devtool page panel**s as you wish.
 
 # How to add a new devtool page panel

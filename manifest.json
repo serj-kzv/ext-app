@@ -51,6 +51,9 @@
       "run_at": "document_start"
     }
   ],
+  "chrome_url_overrides": {
+    "newtab": "/nt-app/index.html"
+  },
   "permissions": [
     "<all_urls>",
     "activeTab",
